@@ -1,37 +1,221 @@
-body {
-    margin:0%;
-    background-color: rgb(222, 222, 222);
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "back  navi   back"
-        "vide  vide   vide"
-        "back  back   back"
+body, html {
+    height: 100%;
+    margin-left: 9.6%;
+    font-family: Gill Sans, sans-serif;
 }
 
-
-.vid {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: aqua;
-    width: 100%;
-    height: 50%;
-    outline: auto;
+.sidenav {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 15%;
 }
 
-.header {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-family: 'Migha', sans-serif;
+.sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    padding-top: 10%;
+    padding-left: 30%;
+    font-family: Gill Sans, sans-serif;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    height: calc(240% - 10%); /* Adjust the height based on your needs */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.intro {
+    width: 100%;
+    flex-basis: 350px;
     display:flex;
-    align-items: center;
-    color: #F2F3FC;
-    padding-left:250px;
-    font-size: 75px;
-    animation: fade-in 5s 10s forwards cubic-bezier(0.11,0,0.5,0);
+    flex-direction: column;
+}
+.intro-box {
+    background-color: black;
+    width: 100%;
+    height:250px;
+    margin-top:auto;
+    display:flex;
+}
+.pic {
+    background-color: orange;
+    width:26.5%;
 }
 
+.box-style {
+    background-color: aqua;
+    width:24.5%;
+    display:flex;
+    flex-direction: column;
+    font-weight: lighter;
+
+}
+.box-head {
+    background-color: #111;
+    margin-top: 0px;
+    height:50px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.box-content {
+    background-color: #ffffff;
+    width:100%;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about {
+    width: 100%;
+    flex-basis: 350px;
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+
+.stacks {
+    width: 100%;
+    flex-shrink: 0;
+    flex-basis: 140px;
+    background-color: #c2c2c2;
+    display: flex;
+}
+.stack-text {
+    width:30%;
+    height:100%;
+    padding-top:1.2%;
+    font-weight: 700;
+    
+}
+.stack-font {
+    font-weight: 900;
+    margin:0px;
+    text-align: center;
+    padding-bottom:0;
+    padding-top:0;
+    padding-left:10%;
+    font-family: 'Oswald', sans-serif;
+
+}
+.stack {
+    width: 80px;
+    height: 80px;
+    transition: height 0.5s;
+    transition: width 0.5s;
+
+}
+.stack:hover {
+    width: 85px;
+    height: 85px;
+}
+.skills {
+    display:flex;
+    width:90%;
+    justify-content: space-between;
+    margin-left:3%;
+    align-items: center;
+    padding-right:3%;
+    padding-left:5%
+}
+
+.projects {
+    background-color: blue;
+    width:100%;
+    flex-basis:700px;
+}
+.contact {
+    background-color: chartreuse;
+    width: 100%;
+    flex-basis:400px
+}
+
+.box-font {
+    color:white;
+    padding-top:0;
+    margin-top:5px;
+    margin-left:0;
+    margin-right:0;
+    display:flex;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.box-text {
+    width:80%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.usf-logo {
+    width:80px;
+    height:80px;
+}
+
+.school-text {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.socials {
+    width:30%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+}
+.box {
+    height:30px;
+    width:30px;
+    position: relative;
+}
+.box::after {
+    content: "";
+    height:3px;
+    width:40px;
+    background-color: aqua;
+    position: absolute;
+    left:-5px;
+    bottom:-8px;
+    opacity:0;
+    transition:all 0.2s
+
+}
+.box:hover::after {
+    content: "";
+    height:3px;
+    width:40px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left:-5px;
+    bottom:-8px;
+    opacity:1
+
+}
+.bio {
+    width:60%;
+    text-align: center;
+    font-size:15pt
+}
