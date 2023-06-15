@@ -9,7 +9,8 @@ def home(request):
     projects=Project.objects.all()
     form=Contact()
     context={
-        'projects':projects
+        'projects':projects,
+        'form':form,
     }
     return render(request, 'home.html', context)
 

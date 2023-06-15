@@ -1,7 +1,6 @@
 from django import forms
 
 class Contact(forms.Form):
-
     name=forms.CharField(max_length=40,widget=forms.TextInput(
         attrs={
             'class': 'input-class',
@@ -17,4 +16,5 @@ class Contact(forms.Form):
         attrs={
         'class':'input-class',
         'placeholder':"Subject",
+        'style':'height:100px'
     }))

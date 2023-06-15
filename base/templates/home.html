@@ -46,6 +46,10 @@
                                 <h1 class="box-font">Fun Facts</h1>
                             </div>
                             <div class="box-content">
+                                <h5 style="margin:0">Nationality</h4>
+                                <h3 style="margin:0; padding-bottom:20px">South Africa</h2>
+                                <h5 style="margin:0">Steak Temperature</h4>
+                                <h3 style="margin:0">Medium Rare</h2>
                             </div>
                         </div>
                     </div>
@@ -53,7 +57,7 @@
                 <hr>
                 <div class="about">
                     <h2 class="school-text">Hello! I'm</h2>
-                    <h1 class="school-text" style="padding-bottom: 25px;font-size:36pt;">Blake McFarlane</h1>
+                    <h1 class="school-text" style="padding-bottom: 25px;font-size:42pt;">Blake McFarlane</h1>
                     <div class="socials">
                         <a href="https://www.linkedin.com/in/blake-mcfarlane-587a451a3/" style="text-decoration: none;">
                             <div class="box">
@@ -163,19 +167,19 @@
                 </div>
                 <div class="contact">
                     <div class="contact-logo">
-
+                        <h1 style="color:white;font-size: 30pt;padding-top:30px">Contact Me!</h1>
+                        
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ppjmx2th.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;position:absolute; bottom:70px" hover loop  autoplay></lottie-player>
                     </div>
                     <div class="contact-form">
-                        <form method="POST" >
+                        <form method="POST" style="padding-top:30px;display: flex;flex-direction: column; align-items: center;">
                             {% csrf_token %}
                     
-                            <label for="form.name" style="font-family: Gill Sans, sans-serif;">Name</label>
                             {{form.name}}
                     
-                          <label for="form.email"  style="font-family: Gill Sans, sans-serif;">Email</label>
                           {{form.email}}
 
-                          <label for="form.subject"  style="font-family: Gill Sans, sans-serif;">Subject</label>
                           {{form.subject}}
 
                           <button type="submit"  style="font-family: Gill Sans, sans-serif;font-size: larger;">Submit</button>
