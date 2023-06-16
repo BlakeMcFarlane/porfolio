@@ -200,6 +200,9 @@ body, html {
     height:400px;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom:100px;
+   
 }
 .contact-logo {
     background-image: linear-gradient(to bottom right, rgb(62, 62, 62), rgb(0, 0, 0));
@@ -441,8 +444,45 @@ a {
     flex-direction: column; 
     align-items: center;
 }
-
-
+.resume-container {
+    height:350px;
+    background-image: linear-gradient(to bottom right, rgb(134, 205, 237), rgb(114, 185, 242));
+    width: 100%;
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    
+}
+.resume-text {
+    color: #000000;
+    font-size:40px;
+    text-align: right;
+    font-weight: 900;;
+    width:100%;
+    padding:0;
+    margin:0px 10px 0px 0px
+}
+.resume-download {
+    width:50%;
+    padding-right:3%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.resume-pic {
+    width:50%;
+}
+.download-btn {
+    background-color: #000000;
+    color:white;
+    padding:5px 20px;
+    width:fit-content;
+    margin-left:auto;
+    align-items: middle;
+    font-size: 37pt;
+}
 
 
 @media all and (max-width:1100px){
@@ -589,8 +629,7 @@ a {
         display:flex;
         height:40px;
         position:absolute;
-        bottom:0;
-        padding-top:10px
+        padding-top:20px
     }
     .tag {
         background-color: rgb(77, 77, 77);
@@ -692,7 +731,7 @@ a {
     }
 
     .project-pic {
-        height:700%;
+        height:70%;
         width:70%;
         background-color: #2f3f62;
 
@@ -709,16 +748,16 @@ a {
     }
 
     .project-tag {
-        width:30%;
+        width:20%;
         height:20%;
         display:flex;
         position:absolute;
-        right:2%;
-        bottom:-200px;
-        padding-bottom:5%;
+        margin-bottom: -180px;
+        padding-bottom:0px;
         padding-right:10px;
         align-items: center;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;  
+        right:10%;
     }
 
     .tag {
@@ -737,7 +776,7 @@ a {
         margin-top:0;
         text-align: center;
         width:fit-content;
-        font-size: 26pt;
+        font-size: 30pt;
         
         
 
@@ -756,14 +795,21 @@ a {
     .project-name {
         margin:0; 
         padding-top:10px;
-        font-size:60pt;
+        font-size:72pt;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width:95%;
+        font-weight: 900
+    ;
     }
     .project-bio {
         margin:10px;
-        padding-bottom: 0%;
+        padding-bottom: 2%;
         padding-right:5%;
         font-size:30pt;
-        width:95%;
+        width: 90%;
+        padding-left:5%
         
     }
     
