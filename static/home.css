@@ -452,6 +452,7 @@ a {
         display:flex;
         box-shadow:  0 0 0 rgb(0, 0, 0);
         transition: width 0.5s, box-shadow 0.5s ease;
+        position: relative;
         
     }
     .email-text {
