@@ -462,7 +462,7 @@ a {
     
     .content {
         height:fit-content;
-        padding-bottom:100px;
+        padding-bottom:300px;
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -488,7 +488,8 @@ a {
         display:flex;
         height:40px;
         position:absolute;
-        bottom:0
+        bottom:0;
+        padding-top:10px
     }
     .tag {
         background-color: rgb(77, 77, 77);
