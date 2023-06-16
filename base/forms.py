@@ -16,5 +16,5 @@ class Contact(forms.Form):
         attrs={
         'class':'input-class',
         'placeholder':"Subject",
-        'style':'height:90px'
+        'style':'height:200px'
     }))
