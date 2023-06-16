@@ -7,7 +7,7 @@ class Contact(forms.Form):
             'placeholder':"Name",
         }
     ))
-    email=forms.EmailField(max_length=80,widget=forms.TextInput(
+    email=forms.CharField(max_length=80,widget=forms.TextInput(
         attrs={
         'class':'input-class',
         'placeholder':"Email",
@@ -16,5 +16,5 @@ class Contact(forms.Form):
         attrs={
         'class':'input-class',
         'placeholder':"Subject",
-        'style':'height:100px'
+        'style':'height:90px'
     }))

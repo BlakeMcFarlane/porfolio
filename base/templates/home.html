@@ -11,13 +11,13 @@
 
     <body>
         <div class="sidenav">
-            <a href="#">Home</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#projects">Resume</a>
+            <a href="#contact">Contact</a>
         </div>
         <div class="home">
             <div class="content">
-                <div class="intro">
+                <div class="intro" id="home">
                     <div class="intro-box">
                         <div class="pic">
                             <img style="width:100%" src="{% static 'images/profile_pic.jpeg' %}">
@@ -38,7 +38,7 @@
                                 <img class="usf-logo" src="{% static 'images/usf-logo.png' %}">
                                 <h4 class="school-text" style="padding-top:5%">University</h3>
                                 <h3 class="school-text">of South Florida</h2>
-                                <p class="school-text" style="font-size:10pt; padding-top:5%">Computer Science | 2025</p>                                   
+                                <p class="school-text">Computer Science | 2025</p>                                   
                             </div>
                         </div>
                         <div class="box-style">
@@ -46,18 +46,21 @@
                                 <h1 class="box-font">Fun Facts</h1>
                             </div>
                             <div class="box-content">
-                                <h5 style="margin:0">Nationality</h4>
-                                <h3 style="margin:0; padding-bottom:20px">South Africa</h2>
-                                <h5 style="margin:0">Steak Temperature</h4>
-                                <h3 style="margin:0">Medium Rare</h2>
+                                <h5 style="margin:0" class="facts-head">Nationality</h4>
+                                <h3 style="margin:0; padding-bottom:20px"  class="facts-body">South Africa</h2>
+                                <h5 style="margin:0" class="facts-head">Steak Temperature</h4>
+                                <h3 style="margin:0" class="facts-body">Medium Rare</h2>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="about">
+                    <div class="breaker-box"> 
+                        <div class="breaker" ></div>
+                    </div>
                     <h2 class="school-text">Hello! I'm</h2>
-                    <h1 class="school-text" style="padding-bottom: 25px;font-size:42pt;">Blake McFarlane</h1>
+                    <h1 class="about-name" >Blake McFarlane</h1>
                     <div class="socials">
                         <a href="https://www.linkedin.com/in/blake-mcfarlane-587a451a3/" style="text-decoration: none;">
                             <div class="box">
@@ -86,7 +89,7 @@
                 </div>
                 <div class="stacks">
                     <div class="stack-text">
-                        <h1 class="stack-font" style="font-size: 28pt;">What Powers Me!</h1>
+                        <h1 class="stack-font">What Powers Me!</h1>
                     </div>
                     <div class="skills">
                         <div class="stack">
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects">
+                <div class="projects" id="projects">
                     <div class="project-container">
                         <div class="project-title">
                             <h2 style="margin:0">Projects</h1>
@@ -120,8 +123,8 @@
                                 
                             </div>
                             <div class="project-info">
-                                <h1 style="margin:0; padding-top:10px">Storybook Generator</h1>
-                                <p style="margin:10px;padding-bottom: 0%;">Using OpenAI's Chat GTP-3 API to generate a kids storybook with an artificially drawn cover image and text completion.</p>
+                                <h1 class='project-name'>Storybook Generator</h1>
+                                <p class='project-bio'>Using OpenAI's Chat GTP-3 API to generate a kids storybook with an artificially drawn cover image and text completion.</p>
                                 <div class="project-tag">
                                     <h5 class="tag">Django</h5>
                                     <h5 class="tag">API</h5>
@@ -133,11 +136,11 @@
                         </div>
                         <div class="project">
                             <div class="project-pic">
-                                <img src="{% static 'images/wage-project.png' %}" style="width:110%">
+                                <img src="{% static 'images/wage-project.png' %}" style="width:100%">
                             </div>
                             <div class="project-info">
-                                <h1 style="margin:0; padding-top:10px">WageWise</h1>
-                                <p style="margin:10px; padding-bottom:0">An online finance calculator which allows users to calculate their gross income as well as calculate their monthly mortgage. Calculations are made based on form submissions which querries pythons built in data structures. </p>
+                                <h1 class='project-name'>WageWise</h1>
+                                <p  class='project-bio'>An online finance calculator which allows users to calculate their gross income as well as calculate their monthly mortgage. Calculations are made based on form submissions which querries pythons built in data structures. </p>
                                 <div class="project-tag" style="padding-top:0">
                                     <h5 class="tag">Django</h5>
                                     <h5 class="tag">HTML</h5>
@@ -153,8 +156,8 @@
                                 
                             </div>
                             <div class="project-info">
-                                <h1 style="margin:0; padding-top:10px">DevSearch</h1>
-                                <p style="margin:0">This was an 18 hour udemy course which built out a social network for developers. Developers can connect, create posts as well as engage with fellow devs.</p>
+                                <h1 class='project-name'>DevSearch</h1>
+                                <p class='project-bio'>This was an 18 hour udemy course which built out a social network for developers. Developers can connect, create posts as well as engage with fellow devs.</p>
                                 <div class="project-tag">
                                     <h5 class="tag">Django</h5>
                                     <h5 class="tag">HTML</h5>
@@ -165,15 +168,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact">
+                <div class="contact" id="contact">
                     <div class="contact-logo">
-                        <h1 style="color:white;font-size: 30pt;padding-top:30px">Contact Me!</h1>
+                        <h1 class='email-text'>Let's Connect!</h1>
                         
                         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ppjmx2th.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;position:absolute; bottom:70px" hover loop  autoplay></lottie-player>
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ppjmx2th.json"  background="transparent"  speed="1"  class='email-logo' hover loop  autoplay></lottie-player>
                     </div>
                     <div class="contact-form">
-                        <form method="POST" style="padding-top:30px;display: flex;flex-direction: column; align-items: center;">
+                        <form method="POST" class="form">
                             {% csrf_token %}
                     
                             {{form.name}}
@@ -186,6 +189,7 @@
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>
